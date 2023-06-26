@@ -1,0 +1,31 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:postgresql://185.196.213.166:5432/db_b2b
+    username: postgres
+    password: db_m@xcyber0770
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # update / create-drop
+    show-sql: true
+    properties:
+      hibernate:
+      format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+etm:
+  url:
+    base: https://stage-ng.etm-system.ru
+    search: /api/hotels/v2/dictionaries/destinations
+    login: /api/login
+
+  token_header: etm-auth-key
+  token: 76a079758e7de85320c7e5236462cb32
+  login: TEST_API_ETS
+  password: API2023test
+
+
+
+
